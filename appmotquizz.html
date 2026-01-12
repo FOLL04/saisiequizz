@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Vitesse de Frappe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-keyboard"></i> Test de Vitesse de Frappe</h1>
+            <p class="subtitle">Mesurez votre vitesse en mots par minute (MPM) et votre précision</p>
+        </header>
+        
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-value" id="wpm">0</div>
+                <div class="stat-label">Mots/Minute</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="accuracy">100%</div>
+                <div class="stat-label">Précision</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="errors">0</div>
+                <div class="stat-label">Erreurs</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="time">60s</div>
+                <div class="stat-label">Temps restant</div>
+            </div>
+        </div>
+        
+        <div class="timer-container">
+            <div class="timer" id="timer">01:00</div>
+            <p>Commencez à taper pour démarrer le chronomètre</p>
+        </div>
+        
+        <div class="text-container">
+            <div class="text-header">
+                <h3>Texte à recopier :</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                    <span id="progress-text">0%</span>
+                </div>
+            </div>
+            <div class="text-to-type" id="text-to-type"></div>
+            <textarea class="typing-area" id="typing-area" placeholder="Commencez à taper le texte ci-dessus ici..." rows="4"></textarea>
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <div class="result-content" id="result-content">
+                <!-- Résultat du test s'affichera ici -->
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn-primary">
+                <i class="fas fa-play"></i> Commencer
+            </button>
+            <button id="reset-btn" class="btn-secondary">
+                <i class="fas fa-redo"></i> Réinitialiser
+            </button>
+            <button id="new-text-btn" class="btn-tertiary">
+                <i class="fas fa-sync-alt"></i> Nouveau Texte
+            </button>
+        </div>
+        
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Instructions :</h3>
+            <ul>
+                <li><i class="fas fa-mouse-pointer"></i> Cliquez sur "Commencer" ou commencez à taper pour démarrer le test</li>
+                <li><i class="fas fa-stopwatch"></i> Le test dure 60 secondes</li>
+                <li><i class="fas fa-chart-line"></i> Votre vitesse (MPM) et votre précision seront calculées en temps réel</li>
+                <li><i class="fas fa-trophy"></i> Terminez le texte avant la fin du temps pour une animation spéciale !</li>
+                <li><i class="fas fa-sync"></i> Cliquez sur "Nouveau Texte" pour obtenir un nouveau passage à taper</li>
+            </ul>
+        </div>
+        
+        <div class="text-counter">
+            <p>Texte <span id="current-text">1</span> sur <span id="total-text">5</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
