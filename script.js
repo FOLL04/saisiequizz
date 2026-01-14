@@ -32,7 +32,7 @@ let textsCompleted = 0;
 // Textes à taper (5 textes maximum comme demandé)
 const textSamples = [
     {
-        text: "La programmation est l'art de créer des solutions logiques à des problèmes complexes. Chaque développeur doit maîtriser plusieurs langages et outils pour être efficace dans son travail quotidien. Le code propre et bien structuré est essentiel pour la maintenance à long terme.",
+        text: "La programmation est l'art de créer des solutions logiques à des problèmes complexes. Chaque développeur doit maîtriser plusieurs langages et outils pour être efficace dans son travail quotidien. ",
         words: 42,
         difficulty: "Moyen"
     },
@@ -42,17 +42,17 @@ const textSamples = [
         difficulty: "Facile"
     },
     {
-        text: "La technologie évolue à un rythme effréné, transformant notre façon de vivre, de travailler et de communiquer. L'intelligence artificielle et l'apprentissage automatique sont désormais omniprésents dans divers secteurs d'activité économique et sociale à travers le monde.",
+        text: "La technologie évolue à un rythme effréné. L'intelligence artificielle et l'apprentissage automatique sont désormais omniprésents dans divers secteurs d'activité économique et sociale à travers le monde.",
         words: 40,
         difficulty: "Moyen"
     },
     {
-        text: "La cuisine française est réputée dans le monde entier pour sa finesse et sa diversité. Des croissants du petit-déjeuner aux fromages et vins fins, chaque région offre ses spécialités gastronomiques uniques qui raviront les papilles des gourmets les plus exigeants.",
+        text: "La cuisine française est réputée pour et sa diversité. Des croissants du petit-déjeuner aux fromages et vins fins, chaque région offre ses spécialités gastronomiques uniques qui raviront les papilles des gourmets les plus exigeants.",
         words: 39,
         difficulty: "Facile"
     },
     {
-        text: "L'exercice physique régulier est essentiel pour maintenir une bonne santé physique et mentale. Que ce soit la marche, la natation ou le yoga, trouver une activité que l'on aime est la clé de la persévérance et du bien-être durable au fil des années.",
+        text: " Que ce soit la marche, la natation ou le yoga, trouver une activité que l'on aime est la clé de la persévérance et du bien-être durable au fil des années.",
         words: 41,
         difficulty: "Facile"
     },
